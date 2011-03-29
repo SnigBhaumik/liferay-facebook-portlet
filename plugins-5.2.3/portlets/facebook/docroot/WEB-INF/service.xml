@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 5.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_5_2_0.dtd">
+
+<service-builder package-path="org.infoaxon.fkm.facebook">
+	<author>
+		apoorva.prakash
+	</author>  
+
+	<namespace>
+		FacebookPortlet
+	</namespace>  
+	
+	<entity name="Facebook" table="fkm_facebook" local-service="true" remote-service="true">
+		<!-- Primary field -->
+		<column name="userid" type="long" primary="true" />
+
+		<!-- Audit fields -->
+		<column name="accesstoken" type="String" />
+		<column name="code" type="String" />
+		
+		<!-- Finder methods -->
+		<finder name="accesstoken" return-type="Collection">
+			<finder-column name="accesstoken" />
+		</finder>
+	</entity>
+	
+	<exceptions> 
+		<exception>SomeException</exception> 
+	</exceptions>
+
+</service-builder>
+
+

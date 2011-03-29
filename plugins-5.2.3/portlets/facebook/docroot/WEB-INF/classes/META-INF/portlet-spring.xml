@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	<bean id="org.infoaxon.fkm.facebook.service.FacebookLocalService.impl" class="org.infoaxon.fkm.facebook.service.impl.FacebookLocalServiceImpl" />
+	<bean id="org.infoaxon.fkm.facebook.service.FacebookLocalService.velocity" class="org.springframework.aop.framework.ProxyFactoryBean" parent="baseVelocityService">
+		<property name="target" ref="org.infoaxon.fkm.facebook.service.FacebookLocalService.impl" />
+	</bean>
+	<bean id="org.infoaxon.fkm.facebook.service.FacebookLocalServiceUtil" class="org.infoaxon.fkm.facebook.service.FacebookLocalServiceUtil">
+		<property name="service" ref="org.infoaxon.fkm.facebook.service.FacebookLocalService.impl" />
+	</bean>
+	<bean id="org.infoaxon.fkm.facebook.service.FacebookService.impl" class="org.infoaxon.fkm.facebook.service.impl.FacebookServiceImpl" />
+	<bean id="org.infoaxon.fkm.facebook.service.FacebookService.velocity" class="org.springframework.aop.framework.ProxyFactoryBean" parent="baseVelocityService">
+		<property name="target" ref="org.infoaxon.fkm.facebook.service.FacebookService.impl" />
+	</bean>
+	<bean id="org.infoaxon.fkm.facebook.service.FacebookServiceUtil" class="org.infoaxon.fkm.facebook.service.FacebookServiceUtil">
+		<property name="service" ref="org.infoaxon.fkm.facebook.service.FacebookService.impl" />
+	</bean>
+	<bean id="org.infoaxon.fkm.facebook.service.persistence.FacebookPersistence.impl" class="org.infoaxon.fkm.facebook.service.persistence.FacebookPersistenceImpl" parent="basePersistence" />
+	<bean id="org.infoaxon.fkm.facebook.service.persistence.FacebookUtil" class="org.infoaxon.fkm.facebook.service.persistence.FacebookUtil">
+		<property name="persistence" ref="org.infoaxon.fkm.facebook.service.persistence.FacebookPersistence.impl" />
+	</bean>
+</beans>
