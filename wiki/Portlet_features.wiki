@@ -1,0 +1,8 @@
+=Following features are available in Facebook Portlet:=
+
+  * Recent updates for logged in user.
+  * Updated wall of logged in user.
+  * Detailed profile of the logged in user.
+  * Full friend List.
+  * Status message can be updated.
+  * Detailed post with message, caption, name and description can be posted.
