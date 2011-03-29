@@ -1,0 +1,1 @@
+create index IX_415D1982 on fkm_facebook (accesstoken);

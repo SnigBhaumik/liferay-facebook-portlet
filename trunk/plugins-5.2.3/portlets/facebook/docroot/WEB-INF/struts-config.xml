@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config> 
+  <!-- Action Mappings -->  
+  <action-mappings>
+	<action path="/infoaxon/fkm/facebook/viewtabs" forward="facebook.view" />
+	<action path="/facebook/readFullStory" forward="facebook.view" />
+    <action path="/facebook/view" type="org.infoaxon.fkm.facebook.action.FacebookAction">
+      <forward name="facebook.view" path="facebook.view"/> 
+    </action>  
+  </action-mappings>  
+  <!-- Message Resources -->  
+  <message-resources parameter="content.Language_en"/>  
+  <!-- Tiles Plugin -->  
+  <plug-in className="org.apache.struts.tiles.TilesPlugin"> 
+    <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>  
+    <set-property property="moduleAware" value="true"/>  
+    <set-property property="definitions-parser-validate" value="true"/> 
+  </plug-in> 
+</struts-config>

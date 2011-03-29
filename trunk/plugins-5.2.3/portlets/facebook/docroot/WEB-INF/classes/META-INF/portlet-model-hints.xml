@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model-hints>
+	<model name="org.infoaxon.fkm.facebook.model.Facebook">
+		<field name="userid" type="long" />
+		<field name="accesstoken" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="code" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+	</model>
+</model-hints>

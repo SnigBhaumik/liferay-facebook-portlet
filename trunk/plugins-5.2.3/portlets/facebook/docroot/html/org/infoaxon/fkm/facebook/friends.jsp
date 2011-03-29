@@ -1,0 +1,1 @@
+<%@ include file="/html/org/infoaxon/fkm/facebook/viewManageFriends.jsp" %>
