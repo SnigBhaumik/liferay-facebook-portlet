@@ -1,9 +1,10 @@
 = How to build the source code =
 
 === Pre-requisites ===
- # Liferay Plugins SDK-5.2.3 zip file.
- # Build tool ANT with proper set up.
- # Liferay Portal bundled-5.2.3 with Tomcat and other set up steps required to run a Tomcat.
+ # JDK 1.6
+ # Liferay Plugins SDK-5.2.3.
+ # Apache ANT.
+ # Liferay tomcat bundle version 5.2.3.
 
 
 === Overview of Liferay Plugin SDK-5.2.3 ===
