@@ -19,7 +19,7 @@
    app.server.lib.global.dir=${app.server.dir}/lib/ext<br />
    app.server.portal.dir=${app.server.dir}/webapps/ROOT<br />
   2. The main development options available in Liferay Plugins SDK-5.2.3 are portlets, themes, layout templates, hooks. Each option in the Liferay Plugins SDK contains scripts for generating that type of plugin. New plugins are placed in their own subdirectory of the appropriate plugin directory. e.g. a new portlet called *"liferay-facebook-portlet"* would reside in _plugins-5.2.3/portlets/liferay-facebook-portlet_. 
-   Check out *"liferay-facebook-portlet"* using url  http://liferay-facebook-portlet.googlecode.com/svn/trunk and get inside the _${Your-check-out-project-home}/plugins-5.2.3/portlets_ e.g _E:/test/portlet/plugins-5.2.3/portlets_. 
+   Check out *"liferay-facebook-portlet"*  from SVN and get inside the _${Your-check-out-project-home}/plugins-5.2.3/portlets_ e.g _E:/test/portlet/plugins-5.2.3/portlets_. 
   Copy facebook folder to your *plugins-5.2.3 portlets* folder. Customize as per your requirement and deploy it. 
 
  3. All plugins are hot deployable means new version of particular plugin can be uploaded at run time. 
