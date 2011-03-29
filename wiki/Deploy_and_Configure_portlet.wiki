@@ -6,7 +6,7 @@ If you are running on some other port, then you need to create your own app on f
 
 === Steps To Follow ===
 
- # Download the war file from this url http://code.google.com/p/liferay-facebook-portlet/downloads/detail?name=facebook-5.2.3.1.war
+ # Download the war file from SVN
  # Once download is complete , move to your server's *auto.deploy.dir =${app.server.dir}/../deploy* folder and drop the war file there. Liferay is set to scan this directory for plugin war.
  # Check on your server console you will get messages regarding portlet that portlet is registered successfully and ready to use. Once this message is displayed. Go to next step.
  # Go to _'WINDOWS\system32\drivers\etc\hosts'_ file and make this entry 	'XXX.XXX.XXX.XXX	fusionkm.infoaxon.com' (where XXX.XXX.XXX.XXX is the IP address of your machine). (*NOTE*: You must not have any duplicate entry in your host file associated with your specified IP address)
