@@ -29,7 +29,7 @@
   # Open console move till above _build.xml_ path and give command
    _*ant deploy* _ 
   # Check whether your portlet is registered and ready for use once server is started.
-  # Login as admin and click on add application link provided in dock. Go to *FKM* category and drag the twitter portlet on your page.
+  # Login as admin and click on add application link provided in dock. Go to *FKM* category and drag the facebook portlet on your page.
 
 Now you are ready to use the portlet.
 
